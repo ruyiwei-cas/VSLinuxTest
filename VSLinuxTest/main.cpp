@@ -1,7 +1,15 @@
-#include <cstdio>
+#include<iostream>
+#include<fstream>
+#include<string>
+#include<vector>
 
-int main()
+using namespace std;
+
+int main(int argc, char* argv[])
 {
-    printf("hello from VSLinuxTest!\n");
-    return 0;
+#ifdef _WIN32
+	cout << "hello Linux!" << endl;
+	cout << "i think i can successful!" << endl;
+#endif
+	return 0;
 }
